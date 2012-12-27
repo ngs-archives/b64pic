@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BPViewController : UIViewController
+@interface BPViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIActionSheetDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+
+- (IBAction)openPicker:(id)sender;
 
 @end

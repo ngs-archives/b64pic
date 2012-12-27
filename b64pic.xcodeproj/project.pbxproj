@@ -23,6 +23,8 @@
 		85E3CE44168BF8FA00DDFF6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E3CE1F168BF8FA00DDFF6B /* Foundation.framework */; };
 		85E3CE4C168BF8FA00DDFF6B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85E3CE4A168BF8FA00DDFF6B /* InfoPlist.strings */; };
 		85E3CE4F168BF8FA00DDFF6B /* b64picTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E3CE4E168BF8FA00DDFF6B /* b64picTests.m */; };
+		85E3CE67168BFC9B00DDFF6B /* UIImage+shrinking.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E3CE66168BFC9B00DDFF6B /* UIImage+shrinking.m */; };
+		85E3CE6A168BFE5A00DDFF6B /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E3CE69168BFE5A00DDFF6B /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,10 @@
 		85E3CE4B168BF8FA00DDFF6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		85E3CE4D168BF8FA00DDFF6B /* b64picTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = b64picTests.h; sourceTree = "<group>"; };
 		85E3CE4E168BF8FA00DDFF6B /* b64picTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = b64picTests.m; sourceTree = "<group>"; };
+		85E3CE65168BFC9B00DDFF6B /* UIImage+shrinking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+shrinking.h"; sourceTree = "<group>"; };
+		85E3CE66168BFC9B00DDFF6B /* UIImage+shrinking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+shrinking.m"; sourceTree = "<group>"; };
+		85E3CE68168BFE5A00DDFF6B /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		85E3CE69168BFE5A00DDFF6B /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 		85E3CE23168BF8FA00DDFF6B /* b64pic */ = {
 			isa = PBXGroup;
 			children = (
+				85E3CE6B168BFE6100DDFF6B /* Categories */,
 				85E3CE2C168BF8FA00DDFF6B /* BPAppDelegate.h */,
 				85E3CE2D168BF8FA00DDFF6B /* BPAppDelegate.m */,
 				85E3CE35168BF8FA00DDFF6B /* MainStoryboard.storyboard */,
@@ -158,6 +165,17 @@
 				85E3CE4A168BF8FA00DDFF6B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85E3CE6B168BFE6100DDFF6B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				85E3CE68168BFE5A00DDFF6B /* NSData+Base64.h */,
+				85E3CE69168BFE5A00DDFF6B /* NSData+Base64.m */,
+				85E3CE65168BFC9B00DDFF6B /* UIImage+shrinking.h */,
+				85E3CE66168BFC9B00DDFF6B /* UIImage+shrinking.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +292,8 @@
 				85E3CE2A168BF8FA00DDFF6B /* main.m in Sources */,
 				85E3CE2E168BF8FA00DDFF6B /* BPAppDelegate.m in Sources */,
 				85E3CE3A168BF8FA00DDFF6B /* BPViewController.m in Sources */,
+				85E3CE67168BFC9B00DDFF6B /* UIImage+shrinking.m in Sources */,
+				85E3CE6A168BFE5A00DDFF6B /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +468,7 @@
 				85E3CE54168BF8FA00DDFF6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85E3CE55168BF8FA00DDFF6B /* Build configuration list for PBXNativeTarget "b64picTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +477,7 @@
 				85E3CE57168BF8FA00DDFF6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
